@@ -126,12 +126,13 @@
     <section class="contact">
         <div class="container">
             <p>Have any question or want to work together?</p>
-            <div class="form">
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Your Email">
+            <form class="form" action="https://formspree.io/xoqkavzv" method="POST">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="email" name="_replyto" id="email" placeholder="Your Email" required>
                 <textarea name="message" id="message" cols="30" rows="8" placeholder="Your Message"></textarea>
-                <a class="btn body-btn" href="#">Submit</a>
-            </div>
+                <!-- <a class="btn body-btn" href="#">Submit</a> -->
+                <button class="btn body-btn" type="submit" name="submit" value="Send">Submit</button>
+            </form>
 
             <div class="social-group">
                 <a href="#" class="social-link">
