@@ -334,7 +334,7 @@ h1{
 }
 
 section:nth-child(4){
-    background: url(img/retrosupply-kZvmEpyfiJs-unsplash.jpg) center no-repeat;
+    background: url('./img/retrosupply-kZvmEpyfiJs-unsplash.jpg') center no-repeat;
     background-size: cover;
     height: 50vh;
     display: flex;
@@ -343,7 +343,7 @@ section:nth-child(4){
 }
 
 section:nth-child(6){
-    background: url(img/retrosupply-jLwVAUtLOAQ-unsplash.jpg) center no-repeat;
+    background: url('./img/retrosupply-jLwVAUtLOAQ-unsplash.jpg') center no-repeat;
     background-size: cover;
     height: 50vh;
     display: flex;
