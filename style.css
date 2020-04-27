@@ -26,6 +26,12 @@ html{
     font-size: 10px;
     color: var(--body-font-color);
     scroll-behavior: smooth;
+    
+}
+
+body{
+    opacity: 0;
+    animation:fadeIn 2.5s forwards;
 }
 
 section{

@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    document.getElementsByTagName('body')[0].style.opacity = 1;
+    console.log(this)
+})
+
 const selectElement = (element) => {
     return document.querySelector(element);
 }
@@ -12,14 +17,14 @@ menuToggle.addEventListener('click', () => {
 //scroll reveal
 ScrollReveal().reveal('.animate-right', {
     origin: 'right',
-    duration: 2000,
+    duration: 1500,
     distance: '25rem',
     delay: 600
 });
 
 ScrollReveal().reveal('.animate-left', {
     origin: 'left',
-    duration: 2000,
+    duration: 1500,
     distance: '25rem',
     delay: 600
 });
