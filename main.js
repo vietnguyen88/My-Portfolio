@@ -1,14 +1,27 @@
-window.addEventListener('load', () => {
-    document.getElementsByTagName('body')[0].style.opacity = 1;
-    console.log(this)
-})
-
 const selectElement = (element) => {
     return document.querySelector(element);
 }
 
 let menuToggle = selectElement('.menu-toggle');
 let nav = selectElement('.nav');
+
+window.addEventListener('load', () => {
+
+    document.getElementsByTagName('body')[0].style.opacity = 1;
+    if (document.body.clientWidth <= 900) {
+        let navItems = document.querySelectorAll('.nav-item');
+        for (item of navItems) {
+            item.addEventListener('click', () => {
+                nav.classList.toggle('open')
+            })
+        }
+    }
+    else {
+        console.log('>900')
+    }
+
+})
+
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('open');

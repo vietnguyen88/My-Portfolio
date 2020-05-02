@@ -31,7 +31,8 @@ html{
 
 body{
     opacity: 0;
-    animation:fadeIn 2.5s forwards;
+    /* animation:fadeIn 2.5s forwards; */
+    transition:  opacity 2s ;
 }
 
 section{
